@@ -1,0 +1,194 @@
+/*style du menu*/
+
+.banner{
+	height: 50px;
+	width: 100%;
+	background-color: black;
+
+}
+.little_banner{
+	height: 10px;
+	width: 100%;
+	background:rgba(0,0,0,0.4);
+}
+#big_banner{
+	height: 50px;
+	width: 100%;
+	background:rgba(0,0,0,0.3);
+}
+#titre{
+	display: block;
+	margin-left: 30px;
+	height: 60px;
+	width: 276px;
+
+}
+#line{
+	height: 1px;
+	width: 100%;
+	background-color: white;
+}
+#menu, #menu
+ ul{
+	background:rgba(0,0,0,0.3);
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+#menu li{
+	display:inline-block;
+	position:relative; 
+}
+/*element du sous menu*/
+#menu ul li{
+	display:inherit;
+}
+/*sous-menu*/
+#menu ul{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .9s all .1s;
+	-webkit-transition: .9s all .1s;
+	transition: .9s all .1s;
+}
+/*declenche les sous menu?*/
+#menu li:hover ul{
+	max-height:15em;
+}
+/* background des liens menus */
+#menu li:first-child{
+	background-color: #CFFF6A;
+	background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+	background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+#menu li:nth-child(2){
+	background-color: #CFFF6A;
+	background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+	background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+#menu li:nth-child(3){
+	background-color: #CFFF6A;
+	background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+	background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+#menu li:last-child{
+	background-color: #CFFF6A;
+	background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+	background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+/* background des liens sous menus */
+#menu li:first-child li{
+	background:#2A2333;
+}
+#menu li:nth-child(2) li{
+	background:#333A40;
+}
+#menu li:nth-child(3) li{
+	background:#9F391A;
+}
+#menu li:last-child li{
+	background:#677F35;
+}
+/* background des liens menus et sous menus au survol */
+#menu li:first-child:hover, #menu li:first-child li:hover{
+	background:#65537A;
+}
+#menu li:nth-child(2):hover, #menu li:nth-child(2) li:hover{
+	background:#729EBF;
+}
+#menu li:nth-child(3):hover, #menu li:nth-child(3) li:hover{
+	background:#F6AD1A;
+}
+#menu li:last-child:hover, #menu li:last-child li:hover{
+	background:#CFFF6A;
+}
+/* les a href */
+#menu a{
+	text-decoration:none;
+	display:block;
+	padding:8px 32px;
+	color:#fff;
+	font-family:arial;
+}
+#menu ul a{
+	padding:8px 0;
+}
+#menu li:hover li a{
+	color:#fff;
+	text-transform:inherit;
+}
+#menu li:hover a, #menu li li:hover a{
+	color:#000;
+}
+
+/* fin du menu */
+/*html pour toutes les pages*/
+html{
+	height: 100%;
+}
+
+/*body pour toutes les pages*/
+body{
+	height: 100%;
+	margin: 0;
+}
+
+/*style footer*/
+
+#footer{
+	background-color: black;
+	height: 30px;
+	width: 100%;
+	color: white;
+}
+
+/* --------------------------------------------------*/
+/* style de menu.php */
+/* --------------------------------------------------*/
+
+#principal{
+	margin-left: 300px;
+	margin-right: 300px;
+}
+#home_body{
+	margin: 0;
+	background: url(images/lit_background2.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+}
+
+/* --------------------------------------------------*/
+/* style de shop.php */
+/* --------------------------------------------------*/
+#shop_body{
+	margin: 0;
+	background: url(images/lit_background2.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#principal_shop{
+	padding-top: 100px;
+	position: relative;
+	left: 50%;
+	margin-left: -313px;
+
+}
+
+#light{
+	display: inline-block;
+	width: 303px;
+	height: 227px;
+}
+#geneve{
+	display: inline-block;
+	margin-left: 20px;
+	width: 303px;
+	height: 227px;
+}
+
